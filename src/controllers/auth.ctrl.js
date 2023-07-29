@@ -24,7 +24,7 @@ const registrarUsuario = async (req, res) => {
     };
 
     const new_user = await User(nuevo_usuario).save();
-
+    console.log("=>", new_user);
     const token = await generarJWT(new_user.id);
 
     return res.json({

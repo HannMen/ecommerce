@@ -1,4 +1,5 @@
 const { Router } = require("express");
+const { validarJWT } = require("../middleware/jwt.middleware");
 
 const {
   obtenerUsuarios,

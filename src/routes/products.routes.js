@@ -1,17 +1,16 @@
 const { Router } = require("express");
+const { validarJWT } = require("../middleware/jwt.middleware");
 
 const {
-  obtenerProductos,
   crearProducto,
-  actualizarProducto,
-  eliminarProducto,
+  obtenerProductos,
+  obtenerProducto,
 } = require("../controllers/products.ctrl");
 
 const router = Router();
 
 router.get("/", obtenerProductos);
-router.post("/", crearProducto);
-router.put("/:id", actualizarProducto);
-router.delete("/:id", eliminarProducto);
+router.get("/:id", obtenerProducto);
+router.post("/", validarJWT, crearProducto);
 
 module.exports = router;
