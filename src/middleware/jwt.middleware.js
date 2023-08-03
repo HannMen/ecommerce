@@ -1,3 +1,8 @@
+// req.query = query params, viene de la ruta http://localhost:4000/api/usuarios?nombre=jesus&apellido=fernandez
+// req.params = parametros, viene de la ruta http://localhost:4000/api/usuarios/jesus/fernandez
+// req.body = cuerpo de la peticion POST PUT, {nombre: "Jesus", apellido: "Fernandez"}
+// req.header = encabezado de la peticion GET, POST, PUT, DELETE ??
+
 const jwt = require("jsonwebtoken");
 const User = require("../models/user");
 

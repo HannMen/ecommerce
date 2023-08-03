@@ -1,0 +1,24 @@
+# @api = http://localhost:4000/api/auth
+@api = https://ecommerce-gj9t.onrender.com/api/auth
+
+### sign in
+POST {{api}}/login
+Content-Type: application/json
+
+{
+    "user_name": "DGOMEZ",
+    "password": "121212"
+}
+
+### sign in
+POST {{api}}/register
+Content-Type: application/json
+
+{
+    "user_name": "DGOMEZ",
+    "password": "121212"
+}
+
+### renovar token
+{{api}}/renew
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YzU1NWM5YjJkZTgyOTVhZTE2OWI4ZCIsImlhdCI6MTY5MDY1NDc5NCwiZXhwIjoxNjkwNjY5MTk0fQ.9e2nvQ64GuQA0Gi7JISa4KM8kSpRqbuD1yuBIOGw00Y
