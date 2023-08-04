@@ -1,4 +1,5 @@
 const Product = require("../models/product");
+// cambio para fix de DB
 
 const obtenerProductos = async (req, res) => {
   try {
